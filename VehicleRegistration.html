@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vehicle Registration Form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<fieldset>
+      <legend>  <h1>Vehicle Registration Form</h1></legend>
+	<form action="#" method="POST">
+		<h2>Personal Information</h2>
+		<label for="name">Full Name:</label>
+		<input type="text" id="name" name="name" required>
+		
+		<label for="address">Address:</label>
+		<input type="text" id="address" name="address" required>
+		
+		<label for="phone">Phone Number:</label>
+		<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+		
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+		
+		<h2>Vehicle Information</h2>
+		<label for="make">Make:</label>
+		<input type="text" id="make" name="make" required>
+		
+		<label for="model">Model:</label>
+		<input type="text" id="model" name="model" required>
+		
+		<label for="year">Year:</label>
+		<input type="number" id="year" name="year" min="1900" max="2099" required>
+		
+		<label for="color">Color:</label>
+		<input type="text" id="color" name="color" required>
+		
+		<label for="vin">VIN (Vehicle Identification Number):</label>
+		<input type="text" id="vin" name="vin" required>
+		
+		<h2>Registration Information</h2>
+		<label for="registration_number">Registration Number:</label>
+		<input type="text" id="registration_number" name="registration_number" required>
+		
+		<label for="registration_date">Registration Date:</label>
+		<input type="date" id="registration_date" name="registration_date" required>
+		
+		<label for="expiration_date">Expiration Date:</label>
+		<input type="date" id="expiration_date" name="expiration_date" required>
+		
+		<label for="registration_fee">Registration Fee:</label>
+		<input type="number" id="registration_fee" name="registration_fee" min="0" step="0.01" required>
+		<br><br>
+		<input type="submit" value="Submit Registration">&emsp;<input type="reset" value="Reset">
+	</form>
+    </fieldset>
+</body>
+</html>
